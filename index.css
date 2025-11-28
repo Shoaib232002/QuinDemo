@@ -1,0 +1,31 @@
+h1{
+    font-family:sans-serif,monospace;
+    font-style:oblique;
+    font-size:5em;       
+    font:italic 2em sans-serif;
+    font-variant:small-caps;
+    font-weight:lighter;
+}
+.rotate{
+height:100px;
+width:100px;
+background:black;
+rotate: X 45deg;
+transform:skew(45deg);
+}
+#delay{
+    font-size:14px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+button{
+    --main-bg-color:brown;
+    background-color:var(--main-bg-color);
+    color:white;
+}
+p{
+    color:teal;
+    color:var(--text-color);
+    font-size:calc(50px + 1vw);
+}

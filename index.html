@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demo</title>
+        <meta name="description" content="This is my index page">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav>
+            <menu>
+                <li><a href="#traffic">Traffic</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#park">Park</a></li>
+            </menu>
+            <ol>
+                <li>One</li>
+                <li>Two</li>
+           </ol>
+        </nav>
+        <main>
+            <article>
+                <h1>Bengaluru</h1>
+            <section id="traffic">
+                <hgroup>
+                    <h2>Traffic</h2>
+                    <p>The traffic takes a lot of time to reach at the location</p>
+                </hgroup>
+            </section>
+            <section id="weather">
+                <hgroup>
+                    <h2>Weather</h2>
+                    <p>Enjoy the cool weather today</p>
+                    <pre>Same as 
+                    you write</pre>
+                    <p>Currently the waether in Bengaluru is 25 Degree <abbr>C</abbr></p>
+                    <p> The weather is <b>Cool</b></p>
+                    <p aria-label="Something written in Arabic">راك في المرة القادمة This is English</p>
+                    <bdi>أراك في المرة القادمة This is a English sentance </bdi><br>
+                    <bdo>راك في المرة القادمة This is a English sentance</bdo>
+                    <br>
+                    <code>console.log("Hello")</code>
+                    <em>Emphasised Tag</em> <br>
+                    <i>Italics font</i><br>
+                    <kbd>Ctrl + R</kbd>
+                    <mark>Highlighted text</mark><br>
+                    <s>Strike the content</s><br>
+                    <small>Words in small</small>
+                    <strong>Strong Tag</strong>
+                    <p>this <span>is Spanned </span>is <sub>sub</sub></p>
+                    <p>this is <sup>sup</sup></p>
+                    <u>Underline</u><br>
+                    <strike>Strikes</strike><br>
+                    <del>Delete</del>
+                    <samp>Computer program</samp>
+                    
+                </hgroup>
+            </section>
+            <section id="park">
+                <hgroup>
+                    <h2>Park</h2>
+                    <p>We will discuss about parks in Bengaluru now</p>
+                    <blockquote>Ride a Donkey While Searching for a Horse.</blockquote>
+                    <cite>~Gnaneshwar P</cite>
+                </hgroup>
+                <dl>
+                    <dt>Bootcamp
+                        <dd>Html</dd>
+                    </dt>
+                </dl> 
+                 <figure><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/97/73/07/photo4jpg.jpg?w=900&h=500&s=1" alt="No image">
+                <figcaption>Cubbon Park</figcaption></figure>
+                <hr />
+                
+            </section>
+            </article>
+            <section>
+                <header>
+  <h1>Movie website</h1>
+  <search>
+    <form action="./search/">
+      <label for="movie">Find a Movie</label>
+      <input type="search" id="movie" name="q" />
+      <button type="submit">Search</button>
+    </form>
+  </search>
+</header>
+        <form>
+        <fieldset >
+            <legend>PERSONAL DETAILS</legend>
+            <label for="name">Name: </label>
+            <input type="text"  id="name"  minlength="2" maxlength="15"/><br>
+            <label for="email">Email: </label>
+            <input type="email" pattern="\[\w]+@+[a-z]+.+[a-z]" id="email"  minlength="2" maxlength="15"/><br>
+            <label for="password">OTP: </label>
+            <input type="password" id="password" /><br>
+            <input type="file">
+            <label for="battery">Battery Level</label>
+            <meter id="battery" max="100" low="20" optimum="50" high="80" value="81">
+            </meter><br>
+            <label for="progress">Progress:</label>
+            <progress id="progress" max="100" value="20"></progress><br>
+            <input list="numbers"/>
+            <datalist id="numbers">
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </datalist>
+        <button>Submit</button>
+        </fieldset>
+        <fieldset>
+            <legend>Other Details: </legend>
+            <lable for="address"></lable><textarea rows="5" cols="15"></textarea><br>
+            <label for="locality">Select Address</label>
+            <select id="locality" multiple>
+                <option>Bengaluru</option>
+                <option>Manglore</option>
+                <option>Mysuru</option>
+                <option>Chennai</option>
+            </select>
+        </fieldset>                 
+        </form>
+        <details>This is a secret</details>
+        <dialog open>This is dialog</dialog><br>
+        <summary>Summary</summary>
+        <br>
+                <div class="rotate"></div>
+        <input type="time" min="09:00" step="900">
+        <input type="datetime-local" min="2019-12-25T19:30" step="900">
+        <p id="delay">Testing the transitions</p>
+            </section>
+            <section>
+                <h2>Contact Info:</h2>
+                <address>Nidaghatta, Maddur, Mandya PIN:571433</address>
+                <a href="mailto:shoaib232002@gmail.com">Email</a>
+            </section>
+        </main>
+        <footer><a href="#top">Goto top </a>&copy; Shoaib Reserved at 2025 </footer>
+    </body>
+</html>

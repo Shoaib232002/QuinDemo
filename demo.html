@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demo</title>
+        <meta name="description" content="This is Week 2 of html">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="index.css">
+        <style>
+            .a-c{
+                height:100px;
+                width:1000px;
+            }
+            .anime{
+                height:100px;
+                width:100px;
+                border-radius:50%;
+                background:black;
+                animation: 10s ease-in 1s infinite reverse both running slide-in;
+            }
+            @keyframes slide-in{
+                from{
+                    transform: translateX(0px);
+
+                }
+                to{
+                    transform: translateX(1000px);
+                }
+            }
+            [class ~= a]{
+              color:yellowgreen;  
+            }
+            /* [id = training2]{
+                color:red;
+            } */
+            [class ^= head]{
+                color:yellow
+            }
+            [class $= ing2]{
+                color:orange;
+            }
+            [class *= c]{
+                    color:red;
+            }
+            [class *= "d " ]{
+                color:magenta;
+            }
+            a[href*="CASE" i] {
+                  color: pink;
+            }
+            p{
+                font-family:sans-serif;
+            }
+            #name-color{
+                color:blue
+            }
+            #hex-color{
+                color:#0f0f;
+            }
+            #rgb-color{
+                color:rgb(100,100,100)
+            }
+            #alpha-rgb{
+                color:rgb(200 0 150 / 50%)
+            }
+            #hsl-color{
+                background-color:hsl(180deg 25 25 /0.5);
+                color:hsl(0 100 100);
+            }
+            #hwb-color{
+                background-color:hwb(0.25turn 0% 0%)
+            }
+            #test-bg{
+                background-image:url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIy4d7P3mJN5n44jxkUjp24w5W1FF2ro43MBxyZqTV2EOB9hVgw1ZW3m9kFoxqA6TD2AqigsYj");
+                height:20em;
+                width:20em;
+            }
+            #test-lineargrad{
+                height:20em;
+                width: 20em;
+                background:linear-gradient(to right, lred,pink,white);
+            }
+            #test-bg-pos{
+                height:20em;
+                width: 20em;
+                background-position:right;
+                border: solid 1px black;
+            }
+            #test-bg-pos p{
+                height:10px;width:10px;
+                background-position:center;
+            }
+            #attachment {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGB3Q0aOwmjal2RZist4ja643fMTjnIufQNJtc6fTea24n_Q8s8qOP_49UabRWT-_9xg2tBsh");
+                height:30em;width:20em;
+                background-attachment: fixed;
+                }
+            #test-border{
+                border: 10px solid red;
+                padding:20px;
+                margin:20px;
+                
+            }
+            #test-outline{
+                outline: ridge blue 10px;
+                border:20px double black ;
+                margin: 0;
+                padding: 5px;
+            }
+            .p-tag{
+                height:200px;
+                width:200px;
+                background-color: orange;
+            }
+            .h-w{
+                height:100%;
+                widows:300px; 
+                border: 2px solid black;
+                box-shadow: 15px 15px red, -15px -15px yellow;
+            }
+            #display-test{
+                height:200px;
+                width: 200px;
+                display:none;
+            }
+            .d-p{
+                border: 2px solid black;
+                padding:10px;
+                margin:0;
+            }
+            .pos-test{
+            height:100px;
+            width:100px;
+            background-color:black;
+            margin:10px;
+            position:relative;
+        
+            }     
+            .index{
+                z-index:1;
+                color:white;
+                
+            }
+            .in{
+                z-index:-1;
+            }
+            strong{
+                font-size:300%;
+                }
+             .grid-test{
+                display:grid;
+                grid: auto-flow dense / 40px 40px 1fr;;
+            }
+            .box{
+                height:10px;
+                width:50px;
+                background-color:black;
+                margin:10px;
+            }
+            .box2{
+                height:10px;
+                width:25px;
+                background-color:black;
+                margin:10px;
+            }
+            .box3{
+                height:15px;
+                width:150px;
+                background-color:black;
+                margin:10px;
+            }
+            .cols{
+                columns:2;
+            }
+           
+            
+        </style>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <p class="a b">Training</p>
+        <p class="b ">Training2</p>
+        <p class="heading">Testing</p>
+        <p class=heading2>Test</p>
+        
+        <div class="grid-test">
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div class="box3"></div></div>
+        
+        <p class="c">Testing</p>
+        <p class="c">Testing</p>
+        <p class="d">Testing</p>
+        <p class="d">Testing</p>
+        <a href="case">Google</a>
+        <p> Hi there this is a <strong>Strong</strong> tag with font of 300%</p>
+        <p id="name-color">Coloring using names</p>
+        <div class="cols">
+        <p id="hex-color">Coloring using Hex value</p>
+        <p id="rgb-color">Coloring using rgb value</p>
+        <p id="alpha-rgb">Coloring using rgb alpha</p>
+        </div>
+        <p id="hsl-color">Coloring using hsl</p>
+        <p id="hwb-color">coloring using the hwb</p>
+        <!-- <div id="test-bg"></div> -->
+        <p id="test-border">Hello Border</p>
+        <p id="test-outline">Hello Outline</p>
+        <p class="p-tag">Hello</p>
+        <p class="h-w">Height Width</p>
+        <div id="display-test"><p class="d-p">Hello</p>
+        <p class="d-p">Hii</p></div>
+        <div>
+        <div class="pos-test"></div>
+        <div class="pos-test index"></div>
+        <div class="pos-test"></div></div>
+        <div class="index">
+            <div class="in">Hii</div>
+        </div>
+        <div class="a-c">
+        <div class="anime"></div></div>
+        <div id="contain"><div class="box"></div><p>hi whwqh 
+            wuqk oqho  of iwe  ejdiqw  wiejf w</p></div>
+        </body>
+</html> 
